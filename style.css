@@ -1,0 +1,96 @@
+/* General page structure */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Navbar / Header styles */
+.navbar {
+  padding: 10px 20px;
+}
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}
+
+    .category-card {
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      background-color: #f8f9fa;
+    }
+
+    .category-card:hover {
+      transform: scale(1.03);
+    }
+
+    .category-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .category-label {
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 15px;
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
